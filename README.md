@@ -12,8 +12,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -25,6 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
+<img width="563" alt="image" src="https://github.com/user-attachments/assets/2fac93bf-9db1-4925-9cec-2dc11e57b65c" />
+<img width="534" alt="image" src="https://github.com/user-attachments/assets/91cdf05a-a872-4e16-9145-dcf6875cb88b" />
+<img width="1150" alt="image" src="https://github.com/user-attachments/assets/377d091f-97cc-42a0-8331-a074441a7ac9" />
 
 ### Built with
 
