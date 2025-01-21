@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    --primary-color: hsl(35, 77%, 62%);
+    --secondary-color: hsl(5, 85%, 63%);
+    --neutral-very-dark: hsl(240, 100%, 5%);
+    --font-size-base: 15px
+}
+
+body {
+    margin: 8rem;
+    font-size: var(--font-size-base);
+    font-family: 'Inter', sans-serif;
+    color: var(--neutral-very-dark);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+h4 {
+    padding-bottom: .5rem;
+    cursor: pointer;
+}
+
+h4:hover {
+    color: var(--primary-color);
+}
+
+p {
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    line-height: 1.7rem;
+}
+
+hr {
+    border-color: hsl(236, 13%, 42%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.items-nav {
+    display: flex;
+    gap: 2rem;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutral-very-dark);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+#hamburguer {
+    display: none;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.right-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 2rem;
+    padding-inline: 1.5rem;
+    background-color: var(--neutral-very-dark);
+    color: white;
+}
+
+.section-2 > img {
+    width: 100%;
+    height: 70%;
+    padding-bottom: 2rem;
+}
+
+.section-3 {
+    display: flex;
+}
+
+.section-3 > h1 {
+    padding-right: 3rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.description > button {
+    background-color: var(--secondary-color);
+    width: 50%;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.description > button:hover {
+    color: white;
+    background-color: var(--neutral-very-dark);
+}
+
+.section-numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 4rem;
+    gap: 1.5rem;
+}
+
+.item-numbers {
+    display: flex;
+    gap: 1rem;
+}
+
+.item-numbers > img{
+    width: 150px;
+    height: 200px;
+}
+
+.item-numbers > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.description-title:hover {
+    color: var(--secondary-color);
+}
+
+.number {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.description-text {
+    font-size: 1rem;
+}
+
+/* Mobile menu */
+
+#mobileMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    color: var(--neutral-very-dark);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+    border-radius: 20px 0 0 20px;
+}
+
+#mobileMenu.open {
+    transform: translateX(0);
+  }
+
+#mobileMenu img {
+    cursor: pointer;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+  }
+  
+#overlay.active {
+    display: block;
+}
+
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.nav-mobile a {
+    font-size: 1.5rem;
+}
+
+/* Responsive */
+
+@media (width <= 1440px) {
+    body {
+        margin: 2rem;
+    }
+
+    .right-info > div {
+        padding-block: 2rem;
+    }
+
+    .items-nav {
+     display: none;
+    }
+ 
+    #hamburguer {
+     display: block;
+     cursor: pointer;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .section-3 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section-numbers {
+        flex-direction: column;
+        padding-bottom: 3rem;
+        gap: 2rem;
+    }
+
+    .description-title {
+        font-size: 1.3rem;
+    }
+ }
