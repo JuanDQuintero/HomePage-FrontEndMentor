@@ -98,7 +98,7 @@ section {
     display: flex;
 }
 
-.section-3 > h1 {
+.section-3 h1 {
     padding-right: 3rem;
 }
 
@@ -109,7 +109,7 @@ section {
     gap: 1rem;
 }
 
-.description > button {
+.description button {
     background-color: var(--secondary-color);
     width: 50%;
     padding-inline: 1.5rem;
@@ -122,7 +122,7 @@ section {
     font-weight: 700;
 }
 
-.description > button:hover {
+.description button:hover {
     color: white;
     background-color: var(--neutral-very-dark);
 }
@@ -140,12 +140,12 @@ section {
     gap: 1rem;
 }
 
-.item-numbers > img{
+.item-numbers img{
     width: 150px;
     height: 200px;
 }
 
-.item-numbers > div {
+.item-numbers div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -231,7 +231,7 @@ section {
         margin: 2rem;
     }
 
-    .right-info > div {
+    .right-info article {
         padding-block: 2rem;
     }
 
