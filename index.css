@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +40,7 @@ h4:hover {
 }
 
 p {
-    color: hsl(236, 13%, 42%);
+    color: hsl(233, 8%, 79%);
     font-size: 15px;
     line-height: 1.7rem;
 }
@@ -110,6 +112,10 @@ section {
     gap: 1rem;
 }
 
+.description p {
+    color: var(--neutral-very-dark);
+}
+
 .description button {
     background-color: var(--secondary-color);
     width: 50%;
@@ -149,7 +155,7 @@ section {
 .item-numbers div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
 .description-title {
@@ -165,6 +171,7 @@ section {
 .number {
     font-size: 28px;
     font-weight: 600;
+    padding-bottom: 1rem;
     color: var(--secondary-color);
 }
 
