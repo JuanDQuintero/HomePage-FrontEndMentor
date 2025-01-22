@@ -40,7 +40,6 @@ h4:hover {
 }
 
 p {
-    color: hsl(233, 8%, 79%);
     font-size: 15px;
     line-height: 1.7rem;
 }
@@ -89,6 +88,10 @@ section {
     padding-inline: 1.5rem;
     background-color: var(--neutral-very-dark);
     color: white;
+}
+
+.right-info p {
+    color: hsl(233, 8%, 79%);
 }
 
 .section-2 img {
